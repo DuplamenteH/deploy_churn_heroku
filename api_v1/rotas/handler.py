@@ -20,6 +20,11 @@ app = Flask(__name__)
 
 
 #criando endpoints;
+@app.route('/',methods = ['GET'])
+def index():
+    return "<h1> Api funciona na rota /predict =D</h1>"
+
+
 @app.route('/predict',methods=['POST'])
 def predict():
     dados_json=request.get_json()
