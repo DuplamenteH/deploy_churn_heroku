@@ -9,7 +9,7 @@ from processing.data_prep import Data_Prepared
 
 
 #load model
-model = pickle.load(open('./models/churn_randomFlorest.pkl','rb'))
+model = pickle.load(open('api_v1/rotas/models/churn_randomFlorest.pkl','rb'))
 #/media/cmatheus/dadosProjetos/portfolio/Churn/api/api_v1/model/churn_randomFlorest.pkl
 
 
