@@ -6,8 +6,8 @@ import pandas as pd
 
 class Data_Prepared ():
     def __init__(self):
-        self.le = pickle.load(open('https://github.com/DuplamenteH/deploy_churn_heroku/blob/39568681dc09f74361121a9b98ebeeb9e38f53b9/api_v1/model/label_encoder.pkl','rb'))
-        self.mms = pickle.load(open('https://github.com/DuplamenteH/deploy_churn_heroku/blob/39568681dc09f74361121a9b98ebeeb9e38f53b9/api_v1/model/mms.pkl','rb'))
+        self.le = pickle.load(open('../models/label_encoder.pkl','rb'))
+        self.mms = pickle.load(open('../models/mms.pkl','rb'))
         #api/api_v1/model/mms.pkl
         self.simp = SimpleImputer(strategy="mean")
 

@@ -9,7 +9,7 @@ from processing.data_prep import Data_Prepared
 
 
 #load model
-model = pickle.load(open('https://github.com/DuplamenteH/deploy_churn_heroku/blob/86f6a0202c834b5d13464a4fc3e52b76f6b6bc0d/api_v1/model/churn_randomFlorest.pkl','rb'))
+model = pickle.load(open('./models/churn_randomFlorest.pkl','rb'))
 #/media/cmatheus/dadosProjetos/portfolio/Churn/api/api_v1/model/churn_randomFlorest.pkl
 
 
