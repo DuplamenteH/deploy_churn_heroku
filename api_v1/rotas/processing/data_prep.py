@@ -6,8 +6,8 @@ import pandas as pd
 
 class Data_Prepared ():
     def __init__(self):
-        self.le = pickle.load(open('/media/cmatheus/dadosProjetos/portfolio/Churn/model/label_encoder.pkl','rb'))
-        self.mms = pickle.load(open('/media/cmatheus/dadosProjetos/portfolio/Churn/model/mms.pkl','rb'))
+        self.le = pickle.load(open('/media/cmatheus/dadosProjetos/hekoru_deploys/churn/api_v1/model/label_encoder.pkl','rb'))
+        self.mms = pickle.load(open('media/cmatheus/dadosProjetos/hekoru_deploys/churn/api_v1/model/mms.pkl','rb'))
         #api/api_v1/model/mms.pkl
         self.simp = SimpleImputer(strategy="mean")
 
