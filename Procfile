@@ -1,1 +1,1 @@
-web: gunicorn api_v1/rotas/app:app
+web: uwsgi uwsgi.ini
